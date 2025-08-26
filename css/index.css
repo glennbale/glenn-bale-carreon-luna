@@ -1,0 +1,63 @@
+body {
+  background-color: lightgoldenrodyellow;
+  color: navy;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#Connect {
+  text-align: center;
+}
+
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-style: oblique;
+  font-size: 50px;
+  color: rgb(68, 88, 241)
+}
+
+
+h2{
+  font-family: "Mozilla Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+#experience-list li {
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+#connectList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block; 
+}
+
+#connectList li {
+  display: inline-block; 
+  margin: 0 10px; 
+}
+
+#connectList img {
+  max-width: 50px; 
+  height: auto;
+}
+
+p {
+  margin: 10px;
+}
+
+#profile-picture {
+  display: block;
+  margin: auto;
+
+}
