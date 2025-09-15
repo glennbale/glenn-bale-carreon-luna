@@ -49,46 +49,25 @@ p {
 }
 
 .experience-column{
+  display:flex;
+  flex-direction: column;
   padding: 0px;
   flex: 2;
+}
+
+.experience-individual{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(0, 74, 15);
+  color: lightgoldenrodyellow;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 5%;
+}
+
+.experience-title, .experience-date, .experience-description {
+  width: 30%;
   
-}
-
-.experience-QA {
-  background-color: rgb(0, 74, 15);
-  color: lightgoldenrodyellow;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.experience-QA-date {
-  background-color: rgb(0, 74, 15);
-  color: lightgoldenrodyellow;
-  border-radius: 0px 10px 10px 0px;
-}
-
-.experience-CAD{
-  background-color: rgb(0, 74, 15);
-  color: lightgoldenrodyellow;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.experience-CAD-date {
-  background-color: rgb(0, 74, 15);
-  color: lightgoldenrodyellow;
-  border-radius: 0px 10px 10px 0px;
-}
-
-.experience-Distribution{
-  background-color: rgb(0, 74, 15);
-  color: lightgoldenrodyellow;
-  border-radius: 10px 0px 0px 10px;
-  
-}
-
-.experience-Distribution-date {
-  background-color: rgb(0, 74, 15);
-  color: lightgoldenrodyellow;
-  border-radius: 0px 10px 10px 0px;
 }
 
 #skill-list li {
