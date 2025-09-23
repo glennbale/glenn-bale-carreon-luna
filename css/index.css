@@ -8,19 +8,16 @@ body {
   padding-top: 10px;
   padding-right: 5px;
   padding-left: 5px;
+  margin:0;
 }
-
-#Connect {
-  text-align: center;
-}
-
 
 h1{
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
   font-style: oblique;
   font-size: 50px;
-  color: rgb(68, 88, 241)
+  color: rgb(68, 88, 241);
+  margin: 0 auto;
 }
 
 
@@ -30,34 +27,72 @@ h2{
   font-weight: 700;
 }
 
-#experience-list li {
-  display: block; 
-  margin-bottom: 10px; 
-}
-
-#connectList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block; 
-}
-
-#connectList li {
-  display: inline-block; 
-  margin: 0 10px; 
-}
-
-#connectList img {
-  max-width: 50px; 
-  height: auto;
-}
-
 p {
   margin: 10px;
 }
 
+#about{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#experience{
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.experience-columns { 
+  display: flex;
+  margin-top: 0px;
+}
+
+.experience-column{
+  display:flex;
+  flex-direction: column;
+  padding: 0px;
+  flex: 2;
+}
+
+.experience-individual{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(0, 74, 15);
+  color: lightgoldenrodyellow;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 5%;
+}
+
+.experience-title, .experience-date, .experience-description {
+  width: 30%;
+  
+}
+
+#skill-list li {
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+#connect {
+  text-align: center;
+}
+
+.connect-columns { 
+  display: flex;
+  justify-content: center
+}
+
+.connect-column{
+  padding: 0px;
+  flex: 2;
+  
+}
+
+
+
 #profile-picture {
   display: block;
-  margin: auto;
-
+  margin: 0 auto;
 }
