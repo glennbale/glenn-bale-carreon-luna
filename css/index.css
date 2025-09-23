@@ -1,3 +1,4 @@
+/* Design is desktop first */
 body {
   background-color: lightgoldenrodyellow;
   color: navy;
@@ -25,6 +26,15 @@ h2{
   font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
+}
+
+@media (max-width: 675px){
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
 }
 
 p {
@@ -68,6 +78,29 @@ p {
 .experience-title, .experience-date, .experience-description {
   width: 30%;
   
+}
+@media (max-width: 675px) {
+    .experience{
+      text-align: left;
+    }
+    .experience-columns{
+      width: 35em;
+    }
+    .experience-column{
+      flex-direction: column;
+      
+    }
+    .experience-individual{
+      flex-direction: column;
+      border-radius: 10px 10px 10px 10px;
+      border-width: 675px;
+      
+    }
+    .experience-title, .experience-date, .experience-description {
+      width: 35em;
+  
+  }
+
 }
 
 #skill-list li {
