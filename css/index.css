@@ -54,90 +54,113 @@ p {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
-#experience{
+#skills{
   text-align: center;
-  width: 1000px;
+}
+
+#skills ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  gap: 0.50rem;
+  padding: 0;
   margin: 0 auto;
-  margin-top: 30px;
+  max-width: 600px;
 }
 
-.experience-columns { 
+#skills li {
+  padding: 0.5rem 0.75rem;
+  background-color: rgb(0, 74, 15);
+  border-radius: 10px 10px 10px 10px;
+  color: lightgoldenrodyellow;
+  text-align: center;
+}
+/* tablet */
+@media (min-width: 675px) and (max-width: 1024px){
+  #skills{
+    text-align: center;
+  }
+}
+/* phone */
+@media (max-width: 675px){
+  #skills h2{
+    text-align: left;
+  }
+
+  #skills ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+#experience {
+  text-align: center;
+  max-width: 1000px;  
+  width: 90%;         
+  margin: 30px auto 0;
+  padding-inline: 16px;
+  box-sizing: border-box;
+}
+
+.experience-columns {
   display: flex;
-  margin-top: 0px;
+  flex-wrap: column;
+  gap: 1rem;
+  margin-top: 0;
 }
 
-.experience-column{
-  display:flex;
+.experience-column {
+  display: flex;
   flex-direction: column;
-  padding: 0px;
+  gap: 1rem;
+  padding: 0;
   flex: 2;
 }
 
-.experience-individual{
+.experience-individual {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: rgb(0, 74, 15);
   color: lightgoldenrodyellow;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   margin-bottom: 5%;
+  padding: 1rem;
 }
 
 .experience-title, .experience-date, .experience-description {
-  width: 30%;
+  flex: 1 1 200px;
+  margin: 0.5rem;
 }
 /* phone */
 @media (max-width: 675px) {
-    .experience{
-      text-align: left;
-    }
-    .experience-columns{
-      width: 35em;
-    }
-    .experience-column{
-      flex-direction: column;
-      
-    }
-    .experience-individual{
-      flex-direction: column;
-      border-radius: 10px 10px 10px 10px;
-      border-width: 675px;
-      
-    }
-    .experience-title, .experience-date, .experience-description {
-      width: 35em;
+  #experience {
+    text-align: left;
+    margin: 0px;
+  }
   
+  .experience-individual {
+    flex-direction: column;
   }
 
+  .experience-title, .experience-date, .experience-description {
+    flex: 1 1 auto;
+    width: 100%;
+  }
 }
 
 /* tablet */
-@media (min-width: 675px) and (max-width: 1024px) {
-
-    .experience-column{
-      flex-direction: column;
-      
-    }
-    .experience-individual{
-      flex-direction: column;
-      width: 60rem;
-      margin-left: 2%;
-      margin-right: 2%;
-
-    }
-    .experience-title, .experience-date, .experience-description {
-      width: 100%;
-      
+@media (min-width: 676px) and (max-width: 1024px) {
+  .experience-individual {
+    flex-direction: row;
+    margin: 0 2%;
   }
 
+  .experience-title, .experience-date, .experience-description {
+    width: auto;
+    flex: 1 1 33%;
+  }
 }
 
-
-#skill-list li {
-  display: block; 
-  margin-bottom: 10px; 
-}
 
 #connect {
   text-align: center;
