@@ -1,3 +1,4 @@
+/* Design is desktop first */
 body {
   background-color: lightgoldenrodyellow;
   color: navy;
@@ -25,6 +26,24 @@ h2{
   font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
+}
+
+/* phone */
+@media (max-width: 675px){
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+}
+@media (min-width: 675px) and (max-width: 1024px){
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
 }
 
 p {
@@ -67,8 +86,53 @@ p {
 
 .experience-title, .experience-date, .experience-description {
   width: 30%;
-  
 }
+/* phone */
+@media (max-width: 675px) {
+    .experience{
+      text-align: left;
+    }
+    .experience-columns{
+      width: 35em;
+    }
+    .experience-column{
+      flex-direction: column;
+      
+    }
+    .experience-individual{
+      flex-direction: column;
+      border-radius: 10px 10px 10px 10px;
+      border-width: 675px;
+      
+    }
+    .experience-title, .experience-date, .experience-description {
+      width: 35em;
+  
+  }
+
+}
+
+/* tablet */
+@media (min-width: 675px) and (max-width: 1024px) {
+
+    .experience-column{
+      flex-direction: column;
+      
+    }
+    .experience-individual{
+      flex-direction: column;
+      width: 60rem;
+      margin-left: 2%;
+      margin-right: 2%;
+
+    }
+    .experience-title, .experience-date, .experience-description {
+      width: 100%;
+      
+  }
+
+}
+
 
 #skill-list li {
   display: block; 
@@ -79,15 +143,15 @@ p {
   text-align: center;
 }
 
-.connect-columns { 
-  display: flex;
-  justify-content: center
+.connect-columns {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;                  
+  justify-content: center;
 }
 
-.connect-column{
-  padding: 0px;
-  flex: 2;
-  
+.connect-column {
+  padding: 0;
 }
 
 
