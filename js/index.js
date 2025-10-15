@@ -73,3 +73,28 @@ messageForm.addEventListener("submit", function(event){
 
     event.target.reset(); 
 });
+
+//Handle your JSON data
+fetch(`https://api.github.com/users/glennbale/repos`)
+.then(response => {
+    //Handling errors
+    if (!response.ok){
+        throw new Error(`Error status: ${response.status}`)
+    };
+    return response.json();
+})
+.then(repositories => {
+    console.log(repositories);
+
+    const projectSection = document.querySelector('#projects');
+    const projectList = projectSection.querySelector('ul');
+
+    for (let i = 0; i < repositories.length; i++){
+        const project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }
+});
+
+
+
