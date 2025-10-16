@@ -94,6 +94,14 @@ fetch(`https://api.github.com/users/glennbale/repos`)
         project.innerText = repositories[i].name;
         projectList.appendChild(project);
     }
+})
+.catch(error => {
+
+    const projectSection = document.querySelector('#projects');
+    projectSection.innerHTML = `
+      <p style="color: red; font-weight: bold;">
+      Sorry, something went wrong while loading the projects. Please try again later.
+      </p>`;
 });
 
 
